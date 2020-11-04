@@ -1,0 +1,316 @@
+* {
+  /* border: 2px solid   red;
+  padding: 10px  13px 5px 15px; 
+  margin: 10px; */
+}
+body {
+  font-family: "Allerta", sans-serif;
+  margin: 0px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  background-color: #273b47;
+  color: white;
+}
+
+th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+td {
+  padding: 20px;
+}
+
+table,
+td,
+th {
+  border: 1px solid #273b47;
+  border-collapse: collapse;
+}
+
+input , textarea{
+  outline: none;
+}
+
+input:focus , textarea:focus{
+  background-color: lightgray;
+}
+
+.button {
+  border-radius: 12px;
+  border: none; /*para anular el borde por default*/
+  color: white;
+  padding: 7px 15px 7px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  /* background: linear-gradient(to left, colorTuIzquierda , colorTuDerecha); */
+  text-decoration: none; /*por q estoy usando una etiqueta <a></a>*/
+
+  background-color: #fd324e;
+  background: linear-gradient(to left, #FF324E, #FF7050);
+
+  /*gradintes del generador automatico de gradientes de collorzilla:  */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f85032+0,f16f5c+15,f6290c+51,f02f17+66,f02f17+66,e73827+100 */
+  /* background: rgb(248,80,50); Old browsers */
+  /* background: -moz-linear-gradient(left,  rgba(248,80,50,1) 0%, rgba(241,111,92,1) 15%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 66%, rgba(240,47,23,1) 66%, rgba(231,56,39,1) 100%);  
+  background: -webkit-linear-gradient(left,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 15%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 66%,rgba(240,47,23,1) 66%,rgba(231,56,39,1) 100%); 
+  background: linear-gradient(to right,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 15%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 66%,rgba(240,47,23,1) 66%,rgba(231,56,39,1) 100%);  
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=1 ); */
+
+}
+.header {
+  /* width: 1131px;
+  margin: auto; */
+}
+.titulo {
+  font-size: 70px;
+  font-family: "Montserrat", sans-serif;
+  /* line-height: 70px; */
+  margin-bottom: 0px;
+  margin-top: 70px;
+}
+
+.titulo span {
+  color: #ff7050;
+  text-decoration: underline;
+}
+.title-a {
+  font-size: 24px;
+  margin-top: 0px;
+}
+.title-b {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.contenedor { /*.contenedor aguas arriba de .guitarras  por q quiero q guitarras sobreescriba margin-bottom: 60px;*/
+  width: 875px;
+  margin: auto;
+  position: relative;
+}
+
+.background{
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+.guitarras { /*guitarras contenedor son dos clases q se aplican una misma etiqueta entonces la mas general contenedor va aguas arriba
+  la de mas aguas abajo si puede chancar alguna propiedad de la que este aguas arriba y en este caso si quiero chancarla*/
+  color: #1f313c;
+  /* width: 1131px;
+  margin: auto; */
+  margin-bottom: 60px /*!important*/;
+}
+
+.guitarras h2 {
+  font-size: 35px;
+}
+
+.portada {
+  color: white;
+  padding: 20px;
+  height: 500px;
+  /* width: 1130px;
+  margin: auto; */
+}
+.portada button {
+  margin-bottom: 70px;
+}
+
+.menu {
+  font-size: 24px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+.menu li::before {
+  content: "∘ ";
+  line-height: 20px;
+  color: white;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.logotipo {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+
+.guitarra {
+  padding: 10px;
+  /* margin: 10px; */
+  margin: 10px 10px 30px 10px;
+  /* overflow: hidden; */
+  border: 1px solid #1f313c;
+  border-radius: 8px;
+}
+
+.guitarra ol {
+  padding: 0px;
+}
+
+.guitarra.b{  /*al usar muy pegado sin espacio .guitarra.b   le estas diciendo que solo al q tenga esa secuencia de classes*/
+height: 190px;
+}
+
+.derecha {
+  float: right;
+  position: relative;
+  top: -132px;
+}
+
+.izquierda {
+  float: left;
+  position: relative;
+  /* top: 50px; */
+
+}
+
+.contenedor-guitarra-a {
+  padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+  margin-left: 370px;
+  position: relative;
+  bottom: 77px;
+}
+
+.header {
+  position: relative;
+}
+
+.footer {
+  background-color: #273b47;
+  position: absolute;
+  width: 100%;
+  padding: 50px 10px;
+}
+
+.contacto {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contacto img {
+  display: block;
+}
+
+.contacto strong {
+  display: block;
+}
+
+.contacto a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 10px 10px 0px;
+}
+
+label {
+  color: white;
+}
+
+.footer .contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  width: 400px;
+  /* padding: 50px 10px; */
+}
+
+.col1,
+.col2 {
+  /*sin la coma le estarias hablando de una col2 dentro de una col1*/
+  display: flex;
+  flex-direction: column;
+}
+
+.col1 {
+  margin-right: 15px;
+}
+
+.col2 {
+  align-items: flex-start;
+}
+
+.col2 .button{
+  margin-top: 10px;
+}
+.intereses label {
+  font-size: 11px;
+}
+
+.formulario label,
+.sexo,
+.intereses {
+  margin-bottom: 10px;
+}
+
+.sexo {
+  margin-top: 10px;
+}
+
+.tabla{
+  margin: 50px 0px;
+}
+
+/* no todos los elementos pueden tener pseudoelementos ni ::after ni ::before */
+/*sacamos los assets de esta pagina :
+https://dev.w3.org/html5/html-author/charref*/
+
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Allerta', sans-serif; */
+
+/*---------------------------------------------*/
+/* * {
+  border: 1px solid red;
+  margin: 10px;
+}
+
+header {
+  background-color: blue;
+}
+
+section {
+  background-color: purple;
+}
+
+/* selector descendente */
+/* article h3 {
+  color: green;
+}
+
+.title-a {
+  background-color: yellow;
+}
+.title-b {
+  background-color: salmon;
+}
+
+/* selector de id */
+/* #header {
+  border: 3px solid black;
+}
+#portada {
+  border: 3px solid orange;
+}
+#guitarras {
+  border: 3px solid brown;
+} */
